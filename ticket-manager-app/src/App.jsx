@@ -1,3 +1,4 @@
+import "";
 import teams from "./data/team";
 import TrackerTiles from "./components/TrackerTile";
 
@@ -6,23 +7,15 @@ console.log("this is name only", nameOnly);
 
 const App = () => {
   // console.log(teams[0].name);
-  let tempArr = [];
-
-  for (let arr in teams) {
-    console.log(teams[arr].name);
-    tempArr.push(teams[arr].name);
-  }
 
   return (
-    <div>
-      <TrackerTiles namesArray={teams} />;
-    </div>
+    <main>
+      <h1 className="main__header">Ticket Tracker</h1>
+      <div>
+        <TrackerTiles namesArray={teams} />;
+      </div>
+    </main>
   );
-
-  // <>
-  //
-
-  // </>
 };
 
 export default App;

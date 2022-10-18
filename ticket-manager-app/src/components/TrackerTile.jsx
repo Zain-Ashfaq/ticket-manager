@@ -1,8 +1,16 @@
 const TrackerTiles = (props) => {
+  // id
+  // name
+  //role
   const { namesArray } = props;
-  console.log(namesArray, 1);
 
-  const cardList = namesArray.map((names) => <p>{names.name}</p>);
+  const cardList = namesArray.map((names) => (
+    <>
+      <p>{names.name}</p>
+      <p>{names.role}</p>
+      <p>{names.id}</p>
+    </>
+  ));
 
   return <div>{cardList}</div>;
 };
