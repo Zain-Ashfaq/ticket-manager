@@ -1,4 +1,4 @@
-import "";
+import "./App-testing.scss";
 import teams from "./data/team";
 import TrackerTiles from "./components/TrackerTile";
 
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <main>
       <h1 className="main__header">Ticket Tracker</h1>
-      <div>
+      <div className="main__tiles-container">
         <TrackerTiles namesArray={teams} />;
       </div>
     </main>
