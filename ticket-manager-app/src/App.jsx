@@ -12,7 +12,7 @@ const App = () => {
     <main>
       <h1 className="main__header">Ticket Tracker</h1>
       <div className="main__tiles-container">
-        <TrackerTiles namesArray={teams} />;
+        <TrackerTiles teamsArray={teams} />
       </div>
     </main>
   );
