@@ -6,14 +6,14 @@ const nameOnly = teams.name;
 console.log("this is name only", nameOnly);
 
 const App = () => {
-  // console.log(teams[0].name);
+  const employeeJSX = teams.map((employee) => (
+    <TrackerTiles teamsArray={employee} />
+  ));
 
   return (
     <main>
       <h1 className="main__header">Ticket Tracker</h1>
-      <div className="main__tiles-container">
-        <TrackerTiles teamsArray={teams} />
-      </div>
+      <div className="main__tiles-container">{employeeJSX}</div>
     </main>
   );
 };

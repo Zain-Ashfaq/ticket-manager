@@ -1,11 +1,11 @@
 import "./TrackerTile.scss";
 import { useState } from "react";
 
-const TrackerTiles = (props) => {
+const TrackerTiles = ({ teamsArray }) => {
   // id
   // name
   // role
-  const { teamsArray } = props;
+
   const [counter, setCounter] = useState(0);
 
   const addCounter = () => {
@@ -18,18 +18,19 @@ const TrackerTiles = (props) => {
     counter <= 0 ? setCounter(counter - 0) : setCounter(counter - 1);
   };
 
-  const employee = teamsArray.map((key) => (
-    <div className="individual-card">
-      <p>{key.id}</p>
-      <p>{key.name}</p>
-      <p>{key.role}</p>
-      <p>{counter}</p>
-      <button onClick={addCounter}>Add</button>
-      <button onClick={subtractCounter}>Subtract</button>
-    </div>
-  ));
-
-  return <div className="test">{employee}</div>;
+  return (
+    <>
+      <div className="individual-card">
+        <p>{teamsArray.id}</p>
+        <p>{teamsArray.name}</p>
+        <p>{teamsArray.role}</p>
+        <p>{counter}</p>
+        <div className="test"></div>
+        <button onClick={addCounter}>Add</button>
+        <button onClick={subtractCounter}>Subtract</button>
+      </div>
+    </>
+  );
 };
 
 export default TrackerTiles;
