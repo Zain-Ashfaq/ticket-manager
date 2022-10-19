@@ -21,13 +21,14 @@ const TrackerTiles = ({ teamsArray }) => {
   return (
     <>
       <div className="individual-card">
-        <p>{teamsArray.id}</p>
-        <p>{teamsArray.name}</p>
-        <p>{teamsArray.role}</p>
-        <p>{counter}</p>
-        <div className="test"></div>
-        <button onClick={addCounter}>Add</button>
-        <button onClick={subtractCounter}>Subtract</button>
+        <p>ID: {teamsArray.id}</p>
+        <p>Name: {teamsArray.name}</p>
+        <p>Role: {teamsArray.role}</p>
+        <div className="test">
+          <p>{counter}</p>
+          <button onClick={addCounter}>Add</button>
+          <button onClick={subtractCounter}>Subtract</button>
+        </div>
       </div>
     </>
   );
