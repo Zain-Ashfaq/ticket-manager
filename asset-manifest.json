@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ticket-manager/static/css/main.dd069260.css",
+    "main.js": "/ticket-manager/static/js/main.96eedee1.js",
+    "static/js/787.c00c5a3d.chunk.js": "/ticket-manager/static/js/787.c00c5a3d.chunk.js",
+    "static/media/minus.png": "/ticket-manager/static/media/minus.c431ac9e56f242927d3a.png",
+    "index.html": "/ticket-manager/index.html",
+    "main.dd069260.css.map": "/ticket-manager/static/css/main.dd069260.css.map",
+    "main.96eedee1.js.map": "/ticket-manager/static/js/main.96eedee1.js.map",
+    "787.c00c5a3d.chunk.js.map": "/ticket-manager/static/js/787.c00c5a3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd069260.css",
+    "static/js/main.96eedee1.js"
+  ]
+}
