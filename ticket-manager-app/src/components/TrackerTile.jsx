@@ -9,12 +9,9 @@ const TrackerTiles = ({ teamsArray }) => {
   const [counter, setCounter] = useState(0);
 
   const addCounter = () => {
-    console.log("yes");
     setCounter(counter + 1);
   };
   const subtractCounter = () => {
-    console.log("yes");
-
     counter <= 0 ? setCounter(counter - 0) : setCounter(counter - 1);
   };
 
@@ -24,10 +21,19 @@ const TrackerTiles = ({ teamsArray }) => {
         <p>ID: {teamsArray.id}</p>
         <p>Name: {teamsArray.name}</p>
         <p>Role: {teamsArray.role}</p>
-        <div className="test">
+        <div className="counter-container">
           <p>{counter}</p>
-          <button onClick={addCounter}>Add</button>
-          <button onClick={subtractCounter}>Subtract</button>
+          <div className="test">
+            <button className="counter-container__button" onClick={addCounter}>
+              Add
+            </button>
+            <button
+              className="counter-container__button"
+              onClick={subtractCounter}
+            >
+              Subtract
+            </button>
+          </div>
         </div>
       </div>
     </>
